@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">happy</string>
+    <string name="one" translatable="true">Happy birthday！</string>
+    <string name="two" translatable="true">wish you :</string>
+    <string name="str1">one</string>
+    <string name="btn_label1">button</string>
+
+</resources>

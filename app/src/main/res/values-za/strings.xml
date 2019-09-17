@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">happy</string>
+    <string name="one" translatable="false">生日快乐！</string>
+    <string name="two" translatable="false">祝您</string>
+</resources>
