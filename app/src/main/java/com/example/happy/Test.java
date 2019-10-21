@@ -5,48 +5,34 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    private static String TAG="main";
-    TextView out;
+public class Test extends AppCompatActivity implements Runnable {
+
+    private static final String TAG = "main";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_test);
 
-        final TextView out= findViewById(R.id.out);
-
-
-        EditText inp = findViewById(R.id.inp);
-        inp.getText().toString();
-
-
-        TextView out1 = findViewById(R.id.out1);
-        out1.getText();
-
-        Button btn = findViewById(R.id.btn);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                out.setText("shdhsjdhsj");
-            }
-        });
-
+        //kaiqi
+        Thread t =new Thread(this);
+        //t.start();
     }
 
     @Override
-    public void onClick(View v) {
-
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.test,menu);
+        return true;
     }
 
+    @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
         if (item.getItemId()==R.id.menu_set){
             RateItem item1 = new RateItem("aaa","1234");
             RateManager manager = new RateManager(this);
@@ -61,5 +47,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
         return true;
+    }
+
+    @Override
+    public void run() {
+        Log.i(TAG,"run");
     }
 }

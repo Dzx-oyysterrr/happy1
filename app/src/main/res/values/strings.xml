@@ -3,6 +3,8 @@
     <string name="one" translatable="true">Happy birthday！</string>
     <string name="two" translatable="true">wish you :</string>
     <string name="str1">one</string>
-    <string name="btn_label1">button</string>
+    <string name="btn_label1" translatable="false">btn</string>
+    <string name="str2" translatable="false">two</string>
+    <string name="str3" translatable="false">thr</string>
 
 </resources>

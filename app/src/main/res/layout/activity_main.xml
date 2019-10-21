@@ -20,6 +20,7 @@
         android:id="@+id/inp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/str2"
         android:layout_marginBottom="20dp" />
 
     <Button
@@ -27,6 +28,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_label1" />
+
+    <TextView
+        android:id="@+id/out1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/str3" />
+
+
+
 </LinearLayout>
 
 
